@@ -1,0 +1,58 @@
+###github
+###git init
+###git add README.md
+###git commit -m "first commit"
+###git branch -M main
+###git remote add origin https://github.com/badulakepuntocom/djangotasks.git
+###git push -u origin main
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+__pycache__
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+mediafiles
+mediafiles/
+
+Anotaciones.txt
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+
+# Flask stuff:
+instance/
+.webassets-cache

@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<main class="container py-5"> 
+<section class="card card-body">
+  <h1 class="display-1 text-center">Django Tasks Manager</h1>
+  <p class="text-center">This is a Task Manager application, ssed for practice different knowledge like Python, Django, bootstrap, git, render , etc.
+    </p>
+    <p class="text-center">
+      Regards, Santi
+    
+    </p>
+    
+{% if not user.is_authenticated %}
+<div class="text-center">
+  <a class="btn btn-secondary" href="/signup/">
+    Registration
+  </a>
+  <a class="btn btn-primary" href="/signin/">
+    Sign In
+  </a>
+</div>
+ {% else %}
+ <div class="text-center">
+  <a class="btn btn-primary" href="/logout">
+    Logout
+  </a>
+</div>
+
+
+ {% endif %}
+</section>
+
+</main>
+
+
+{% endblock %}
