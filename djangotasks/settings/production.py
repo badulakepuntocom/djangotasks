@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgres://djangotasksdb_user:zo1QAoEBz0dCix7veLfQdpCxSBTmQq56@dpg-cd8qhvun6mpnkgipk6l0-a/djangotasksdb',
+        default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600
     )
 }
